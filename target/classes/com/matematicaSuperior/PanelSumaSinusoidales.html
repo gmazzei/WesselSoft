@@ -1,0 +1,67 @@
+<html>
+	<body>
+		<wicket:panel>
+			<form wicket:id="formOperacion">
+				
+				<div wicket:id="feedbackPanel"></div>
+				
+				<div>
+					<label for="tipoA">Tipo: </label>
+					<select name="tipoA" wicket:id="tipoA"></select>
+				</div>
+				<div>
+					<label for="amplitudA">Amplitud: </label>
+					<input type="text" name="amplitudA" wicket:id="amplitudA" maxlength="10">
+				</div>
+				<div>
+					<label for="frecuenciaA">Frecuencia: </label>
+					<input type="text" name="frecuenciaA" wicket:id="frecuenciaA" maxlength="10">
+				</div>
+				<div>
+					<label for="faseA">Fase: </label>
+					<input type="text" name="faseA" wicket:id="faseA" maxlength="10">				
+				</div>
+				
+				<br>
+				<br>
+				
+				
+				<div>
+					<label for="tipoB">Tipo: </label>
+					<select name="tipoB" wicket:id="tipoB"></select>
+				</div>
+				<div>
+					<label for="amplitudB">Amplitud: </label>
+					<input type="text" name="amplitudB" wicket:id="amplitudB" maxlength="10">
+				</div>
+				<div>
+					<label for="frecuenciaB">Frecuencia: </label>
+					<input type="text" name="frecuenciaB" wicket:id="frecuenciaB" maxlength="10">
+				</div>
+				<div>
+					<label for="faseB">Fase: </label>
+					<input type="text" name="faseB" wicket:id="faseB" maxlength="10">					
+				</div>
+				
+				<br>
+				<br>
+								
+				<div>
+					<input type="submit" wicket:id="submit" value="Calcular">
+				</div>
+
+				<br>
+
+				<div>
+					<label for="resultadoCoseno">Resultado: </label>
+					<span wicket:id="resultadoCoseno" name="resultadoCoseno"></span>
+				</div>
+				<div>
+					<label for="resultadoSeno">Resultado: </label>
+					<span wicket:id="resultadoSeno" name="resultadoSeno"></span>
+				</div>
+				
+			</form>
+		</wicket:panel>
+	</body>
+</html>

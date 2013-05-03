@@ -1,0 +1,35 @@
+<html>
+	<body>
+		<wicket:panel>
+			<form wicket:id="formOperacion">
+				
+				<div wicket:id="feedbackPanel"></div>
+				
+				<div>
+					<label for="numeroA">Base: </label>
+					<input type="text" name="numeroA" wicket:id="numeroA" maxlength="20">
+				</div>
+				<div>
+					<label for="numeroB">Exponente: </label>
+					<input type="text" name="numeroB" wicket:id="numeroB" maxlength="20">				
+				</div>
+				
+				<br>
+
+				<div>
+					<input type="submit" wicket:id="submit" value="Calcular">
+				</div>
+				
+				<br>
+
+				<div>
+					<label for="resultado">Resultado: </label>
+					<span wicket:id="resultado" name="resultado"></span>
+				</div>
+				
+
+				
+			</form>
+		</wicket:panel>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+	<body>
+		<wicket:panel>
+			<form wicket:id="formOperacion">
+				
+				<div wicket:id="feedbackPanel"></div>
+				
+				<div>
+					<label for="numeroA">Base: </label>
+					<input type="text" name="numeroA" wicket:id="numeroA" maxlength="20">
+				</div>
+				<div>
+					<label for="numeroB">Raiz: </label>
+					<input type="text" name="numeroB" wicket:id="numeroB" maxlength="20">				
+				</div>
+				
+				<br>
+
+				<div>
+					<input type="submit" wicket:id="submit" value="Calcular">
+				</div>
+				
+				<br>
+				
+			</form>
+			
+			<div wicket:id="container">				
+				
+				<h3>Resultado</h3>
+								
+				<table cellpadding="5">
+					<thead>
+						<tr>
+							<th scope="col">Forma Binomica</th>
+							<th scope="col">Forma Polar</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr wicket:id="listaRaices">
+							<td wicket:id="numeroBinomica"/>
+							<td wicket:id="numeroPolar"/>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td wicket:id="navigator" align="center" colspan="2" ></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		
+			
+			
+			
+		</wicket:panel>
+	</body>
+</html>

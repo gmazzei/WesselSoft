@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>WesselSoft</title>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+		<div id="hd">
+			<div id="logo">
+				<img src="logo.png" width="50px" height="50px" alt="Wicket Logo" />
+				<h1>WesselSoft</h1>
+			</div>
+		</div>
+		<div id="bd">
+		
+		<form wicket:id="form">
+			<div wicket:id="mensajeInicial"></div>
+			<br>
+			<input type="submit" wicket:id="botonSumar" value="Suma"/>
+			<input type="submit" wicket:id="botonRestar" value="Resta"/>
+			<input type="submit" wicket:id="botonMultiplicar" value="Multiplicacion"/>
+			<input type="submit" wicket:id="botonDivision" value="Division"/>	
+			<input type="submit" wicket:id="botonPotencia" value="Potencia"/>	
+			<input type="submit" wicket:id="botonRadicacion" value="Radicacion"/>	
+			<input type="submit" wicket:id="botonPrimitivas" value="Primitivas"/>	
+			<input type="submit" wicket:id="botonSumaSinusoidales" value="Sinusoidales"/>	
+			
+			<br>
+			<br>
+						
+		</form>
+		
+		<div wicket:id="panel"></div>
+		
+		</div>
+		<div id="ft">
+		</div>
+	</body>
+</html>
